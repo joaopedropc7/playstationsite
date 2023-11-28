@@ -1,5 +1,5 @@
 body{
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 :root{
@@ -15,15 +15,15 @@ header .black{
 }
 
 header .black figure img{
-    margin-right: 20px;
-    width: 80px;
+    margin-right: 10px;
+    width: 74px;
     filter: invert(1);
 }
 
 header .navbar{
     display: flex;
     justify-content: space-between;
-    padding: 0px 20px;
+    padding: 12px 24px;
 }
 
 header .navbar .content{
@@ -46,7 +46,7 @@ header .navbar .content .list ul{
 
 header .navbar .content .list ul li{
     padding: 0px 18px;
-    font-size: 22px;
+    font-size: 16px;
 }
 
 header .navbar .buttons{
@@ -55,14 +55,18 @@ header .navbar .buttons{
     padding: 0px 18px;
 }
 
-header .navbar .buttons a{
-    font-size: 20px;
+header .navbar .buttons .sessao{
+    font-size: 16px;
     text-decoration: none;
     color: white;
     margin-right: 20px;
     background-color: var(--bluebutton);
     padding: 5px 20px;
     border-radius: 20px;
+}
+
+header .navbar .buttons .search{
+    margin-top: 6px;
 }
 
 .banner{
@@ -108,16 +112,22 @@ header .navbar .buttons a{
     margin-left: 22px;
 }
 
-.ps5{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 120px;
+.banner .content a:hover{
+    border: 3px solid rgba(255, 68, 0, 0.76) ;
+    border-spacing: 0cap;
 }
 
-.ps5 .content{
-    
-    width: 600px;
+.ps5{
+    display: flex;
+    height: 500px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px ;
+}
+
+.ps5 .content{ 
+    width: 40%;
 }
 
 .ps5 .content h2{
@@ -146,11 +156,9 @@ header .navbar .buttons a{
     background-color: var(--bluebutton);
 }
 
-.ps5 .image{
-    margin-left: 250px;
-}
+
 .ps5 .image figure img{
-    width: 1000px;
+    width: 600px;
 }
 
 .psplus{
@@ -191,7 +199,7 @@ header .navbar .buttons a{
 
 .psplus p{
     font-weight: 200;
-    font-size: 22px;
+    font-size: 14px;
     margin-top: 20px;
 }
 
@@ -240,6 +248,7 @@ header .navbar .buttons a{
 .virtual{
     background-image: url(./assets/backgroundvirtual.webp);
     background-size: cover;
+    background-position: center center;
     height: 700px;
     display: flex;
     align-items: center;
@@ -317,12 +326,19 @@ header .navbar .buttons a{
     background-color: white;
 }
 
+.cod .lista{
+    display: flex;
+    justify-content: space-around;
+}
+
 .cod .lista .icon{
-    width: 400px;
+    width: 300px;
+    justify-content: center;
 }
 
 .cod .lista .icon figure img{
-    width: 400px;
+    width: 300px;
+    border-radius: 28px;
 }
 
 
@@ -338,4 +354,8 @@ header .navbar .buttons a{
     font-weight: 200;
     font-size: 24px;
     color: white;
+}
+
+.cod .lista .icon{
+    margin: 0px 30px;
 }
