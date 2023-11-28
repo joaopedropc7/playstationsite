@@ -5,6 +5,7 @@ body{
 :root{
     --bluebutton: #0070CC;
     --orangebutton: #D63D00;
+    --backgroundbalck: #121314;
 }
 
 header .black{
@@ -117,6 +118,28 @@ header .navbar .buttons .search{
     border-spacing: 0cap;
 }
 
+.games{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.games .lista ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.games .lista ul li{
+    margin: 0px 12px;
+}
+
+.games .lista ul li figure img{
+    width: 190px;
+    border-radius: 24px;
+}
+
 .ps5{
     display: flex;
     height: 500px;
@@ -160,6 +183,72 @@ header .navbar .buttons .search{
 .ps5 .image figure img{
     width: 600px;
 }
+
+.listgames{
+    background-color: var(--backgroundbalck);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    height: 700px;
+}
+
+.listgames .content h2{
+    font-weight: 200;
+    color: white;
+    font-size: 36px;
+    margin-bottom: 24px;
+}
+
+.listgames .content a{
+    text-decoration: none;
+    font-weight: 200;
+    color: black;
+    background-color: white;
+    padding: 10px 20px;
+    font-size: 22px;
+    border-radius: 24px;
+}
+
+.listgames figure img{
+    width: 210px;
+    height: 210px;
+    border-radius: 24px;
+}
+
+.listgames .list{
+    display: flex;
+    flex-direction: column;
+}
+
+.listgames .list .sublist{
+    display: flex;
+    margin-bottom: 16px;
+    justify-content: space-around;
+}
+
+.listgames .list .sublist ul li p{
+    padding: 0;
+    margin-bottom: 10px;
+    margin-left: 8px;
+    font-weight: 200;
+    font-size: 14px;
+    text-align: start;
+    color: white;
+}
+
+.listgames .list .sublist ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.listgames .list .sublist ul li{
+    margin: 0px 15px;
+}
+
 
 .psplus{
     padding-top: 80px;
@@ -296,7 +385,7 @@ header .navbar .buttons .search{
 }
 
 .cod .content{
-    margin-left: 114px;
+    margin-left: 80px;
 }
 
 .cod .content h2{
@@ -326,18 +415,18 @@ header .navbar .buttons .search{
     background-color: white;
 }
 
-.cod .lista{
+.cod .lista ul{
     display: flex;
     justify-content: space-around;
 }
 
 .cod .lista .icon{
-    width: 300px;
-    justify-content: center;
+    width: 400px;
+    justify-content: space-between;
 }
 
 .cod .lista .icon figure img{
-    width: 300px;
+    width: 400px;
     border-radius: 28px;
 }
 
@@ -358,4 +447,48 @@ header .navbar .buttons .search{
 
 .cod .lista .icon{
     margin: 0px 30px;
+}
+
+.psstore .maeps{
+    margin: 40px 40px;
+    margin-left: 120px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.psstore .maeps .content{
+    width: 30%;
+}
+
+.psstore .maeps .content h2{
+    font-weight: 200;
+    font-size: 40px;
+    padding: 26px 0px;
+}
+
+.psstore .maeps .content p{
+    font-size: 14px;
+    font-weight: 300;
+    color: grey;
+    margin-bottom: 28px;
+}
+
+.psstore .maeps .content a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 25px;
+    background-color: var(--orangebutton);
+    border-radius: 24px;
+}
+
+.psstore .image{
+    width: 70%;
+}
+
+.psstore .image figure img{
+    border-radius: 24px;
+    width: 85%;
 }
