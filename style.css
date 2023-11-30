@@ -7,6 +7,7 @@ body{
     --bluebutton: #0070CC;
     --orangebutton: #D63D00;
     --backgroundbalck: #121314;
+    --backgroundfooterblue: #00439C;
 }
 
 header .black{
@@ -564,6 +565,127 @@ header .navbar .buttons .search{
     width: 100%;
 }
 
+footer{
+    width: 100%;
+    background-color: var(--backgroundfooterblue);
+}
+
+footer .footer{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 60px;
+    width: 100%;
+}
+
+footer .footer .image{
+    width: 100%;
+}
+
+footer .footer .image .psfooter img{
+    width: 20%;
+    filter: invert(1);
+}
+
+footer .footer .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    color: white;
+    font-weight: 300;
+    font-size: 14px;
+    flex-wrap: wrap;
+}
+
+footer .footer .content .sublist .negrito{
+    font-weight: bold;
+}
+
+footer .footer .content .sublist ul{
+    list-style-type: none;
+}
+
+footer .footer .content .sublist ul li{
+    padding: 2px 0px;
+}
+
+footer .footer .rodape{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer .rodape {
+    width: 100%;
+}
+
+footer .footer .rodape .image1{
+    width: 20%;
+
+}
+
+footer .footer .rodape .image2{
+    width: 3%;
+}
+
+footer .footer .rodapeinfo{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-weight: 200;
+    padding: 10px 0px;
+    font-size: 14px;
+}
+
+footer .footer .rodapeinfo a{
+    color: white;
+    font-size: 14px;
+}
+
+footer .footer .info{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer .info .list1{
+    display: flex;
+    align-items: center;
+}
+
+footer .footer .info .list1 p{
+    color: white;
+    padding: 0px 8px;
+}
+
+footer .footer .info .list1 img{
+    filter: invert(1);
+}
+
+footer .footer .info .list2 ul{
+    display: flex;
+    list-style-type: none;
+    color: white;
+}
+
+footer .footer .info .list2 ul li a{
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+    color: white;
+    padding: 0px 10px;
+}
+
+footer .footer .linhafooter{
+    margin-top: 10px;
+    background-color: white;
+    opacity: 20%;
+    height: 2px;
+    width: 100%;
+}
+
 @media only screen and (max-width: 1300px){
     header .navbar .buttons .sessao{
         font-size: 13px;
@@ -809,3 +931,4 @@ header .navbar .buttons .search{
         order: 2;
     }
 }
+
