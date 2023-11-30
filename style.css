@@ -150,36 +150,44 @@ header .navbar .buttons .search{
 
 .ps5{
     display: flex;
-    height: 500px;
+    height: 800px;
     width: 100%;
     justify-content: space-around;
     align-items: center;
     padding: 0px ;
 }
 
-.ps5 .content{ 
+.ps5 .ps5mae{
+    width: 100%;
+    margin: 0px 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ps5 .ps5mae .content{ 
     width: 40%;
 }
 
-.ps5 .content h2{
+.ps5 .ps5mae .content h2{
     font-size: 56px;
     font-weight: 200;
 }
 
-.ps5 .content h3{
+.ps5 .ps5mae .content h3{
     margin-top: 32px;
     font-weight: 100;
     color: var(--bluebutton);
     font-size: 36px;
 }
 
-.ps5 .content p{
+.ps5 .ps5mae .content p{
     font-size: 14px;
     color: grey;
     margin-bottom: 40px;
 }
 
-.ps5 .content a{
+.ps5 .ps5mae .content a{
     text-decoration: none;
     padding: 15px 25px;
     color: white;
@@ -187,9 +195,12 @@ header .navbar .buttons .search{
     background-color: var(--bluebutton);
 }
 
+.ps5 .ps5mae .image{
+    width: 60%;
+}
 
-.ps5 .image figure img{
-    width: 600px;
+.ps5 .ps5mae .image figure img{
+    width: 100%;
 }
 
 .listgames{
@@ -203,14 +214,35 @@ header .navbar .buttons .search{
     height: 700px;
 }
 
-.listgames .content h2{
+.listgames .listgamesmae{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    height: 700px;
+    width: 100%;
+}
+
+.listgames .listgamesmae .content{
+    width: 100%;
+}
+
+.listgames .listgamesmae .lista{
+    width: 100%;
+}
+
+.listgames .listgamesmae .lista .sublist{
+    width: 100%;
+}
+
+.listgames .listgamesmae .content h2{
     font-weight: 200;
     color: white;
     font-size: 36px;
     margin-bottom: 24px;
 }
 
-.listgames .content a{
+.listgames .listgamesmae .content a{
     text-decoration: none;
     font-weight: 200;
     color: black;
@@ -220,24 +252,25 @@ header .navbar .buttons .search{
     border-radius: 24px;
 }
 
-.listgames figure img{
+.listgames .listgamesmae figure img{
     width: 210px;
     height: 210px;
     border-radius: 24px;
 }
 
-.listgames .list{
+.listgames .listgamesmae .list{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
-.listgames .list .sublist{
+.listgames .listgamesmae .list .sublist{
     display: flex;
     margin-bottom: 16px;
     justify-content: space-around;
 }
 
-.listgames .list .sublist ul li p{
+.listgames .listgamesmae .list .sublist ul li p{
     padding: 0;
     margin-bottom: 10px;
     margin-left: 8px;
@@ -247,14 +280,15 @@ header .navbar .buttons .search{
     color: white;
 }
 
-.listgames .list .sublist ul{
+.listgames .listgamesmae .list .sublist ul{
     list-style-type: none;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 
-.listgames .list .sublist ul li{
+.listgames .listgamesmae .list .sublist ul li{
     margin: 0px 15px;
 }
 
@@ -270,7 +304,14 @@ header .navbar .buttons .search{
     align-items: center;
 }
 
+.psplus .psplusmae{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .psplus .image{
+    width: 100%;
     border-radius: 24px;
     display: flex;
     align-items: center;
@@ -302,16 +343,29 @@ header .navbar .buttons .search{
     margin-top: 20px;
 }
 
-.psplus figure img{
-    width: 400px;
+.psplus .psplusmae .logopsplus{
+    width: 30%;
+}
+
+.psplus .psplusmae .logopsplus figure img{
+    width: 100%;
     margin: 0 auto;
 }
 
-.psplus .image{
+.psplus .psplusmae .image{
+    width: 100%;
+}
+
+.psplus .psplusmae .content{
+    width: 100%;
+}
+
+
+.psplus .psplusmae .image{
     margin-top: 20px;
     background-image: url(./assets/backgroundbask.webp);
     background-size: cover;
-    width: 1200px;
+    width: 100%;
     height: 400px;
 }
 
@@ -429,6 +483,7 @@ header .navbar .buttons .search{
 .cod .lista ul{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .cod .lista .icon{
@@ -510,8 +565,16 @@ header .navbar .buttons .search{
 }
 
 @media only screen and (max-width: 1300px){
+    header .navbar .buttons .sessao{
+        font-size: 13px;
+    }
+
+    .games {
+        width: 100%;
+    }
+
     .games .lista ul li figure img{
-        width: 140px;
+        width: 120px;
     }
 
     .ps5{
@@ -531,7 +594,218 @@ header .navbar .buttons .search{
         width: 1000px;
     }
 
-    .cod .lista .icon figure img{
-        width: 320px;
+    .cod{
+        width: 100%;
+    }
+
+    .cod .lista ul .icon figure img{
+        width: 280px;
+    }
+}
+
+@media only screen and (max-width: 1300px){
+
+    header .navbar .content .list{
+        display: none;
+    }
+
+   .banner{
+        width: 100%;
+        background-position: right right;
+        align-items: end;
+        
+    }
+
+    .banner .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: 0px 16px;
+    }
+
+    .banner .content h2{
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+    }
+
+    .banner .content a{
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: 12px;
+        font-size: 16px;
+    }
+
+    .games{
+        display: none;
+        height: 700px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        padding: 0;
+        align-items:  center;
+    }
+
+    .games .lista{
+        width: 100%;
+        height: 100%;
+    }
+
+    .games .lista ul{
+        display: flex;
+        flex-direction: column;
+        align-items:  center;
+    }
+
+    .games .lista ul li figure img{
+        width: 250px;
+    }
+
+    .ps5 .ps5mae{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ps5 .ps5mae .content{
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .ps5 .ps5mae .content h2{
+        order: 1;
+    }
+
+    .ps5 .ps5mae .image{
+        margin-top: 50px;
+    }
+
+    .ps5 .ps5mae .image figure img{
+        order: 2;
+    }
+
+    .ps5 .ps5mae .content .restantecontent{
+        order: 3;
+    }
+
+    .ps5 .ps5mae .content h2{
+        font-size: 32px;
+    }
+
+    .listgames .listgamesmae .content h2{
+        font-size: 24px;
+    }
+
+    .listgames .listgamesmae .list .sublist ul li img{
+        width: 80px;
+        height: 80px;
+        
+    }
+
+    .listgames .listgamesmae .list .sublist ul li p{
+        font-size: 12px;
+    }
+
+    .psplus{
+        padding: 0;
+    }
+
+    .psplus .psplusmae .logopsplus{
+        width: 50%;
+    }
+
+    .psplus .psplusmae{
+        text-align: center;
+    }
+
+    .psplus .psplusmae .content{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .psplus .psplusmae .image{
+        background-position: center center;
+    }
+
+    .virtual{
+        width: 100%;
+        background-position: bottom;
+        background-size: cover;
+        padding: 0;
+    }
+
+    .virtual .content{
+        margin: 0;
+        width: 100%;
+        align-items: end;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .virtual .content h2{
+        font-size: 24px;
+    }
+
+    .virtual .content p{
+        font-size: 14px;
+    }
+
+    .cod{
+        margin: 0;
+        padding: 0;
+        height: 1000px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .cod .content {
+        padding: 0;
+        margin: 0;
+    }
+
+    .cod .lista{
+        margin-top: 30px;
+    }
+
+    .cod .lista ul .icon figure img{
+        width: 240px;
+    }
+
+    .cod .lista ul .icon p{
+        font-size: 16px;
+    }
+
+    .psstore{
+        margin: 0;
+        padding: 0;
+        height: 700px;
+    }
+
+    .psstore .maeps{
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .psstore .maeps .image{
+        width: 100%;
+        order: 1;
+        
+    }
+
+    .psstore .maeps .image figure img{
+        position: relative;
+    }
+
+
+    .psstore .maeps .content{
+        width: 100%;
+        text-align: center;
+        padding: 0px 10px;
+        order: 2;
     }
 }
