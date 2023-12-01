@@ -229,6 +229,7 @@ header .navbar .buttons .search{
 }
 
 .listgames .listgamesmae .lista{
+
     width: 100%;
 }
 
@@ -262,6 +263,7 @@ header .navbar .buttons .search{
 .listgames .listgamesmae .list{
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
 }
 
@@ -269,9 +271,14 @@ header .navbar .buttons .search{
     display: flex;
     margin-bottom: 16px;
     justify-content: space-around;
+    width: 100%;
 }
 
 .listgames .listgamesmae .list .sublist ul li p{
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
     padding: 0;
     margin-bottom: 10px;
     margin-left: 8px;
@@ -286,6 +293,8 @@ header .navbar .buttons .search{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
 }
 
 
@@ -451,7 +460,8 @@ header .navbar .buttons .search{
 }
 
 .cod .content{
-    margin-left: 80px;
+    margin-left: 120px;
+    width: 100%;
 }
 
 .cod .content h2{
@@ -777,6 +787,7 @@ footer .footer .linhafooter{
     .games .lista ul{
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         align-items:  center;
     }
 
@@ -820,14 +831,34 @@ footer .footer .linhafooter{
         font-size: 24px;
     }
 
+    .listgames .listgamesmae .list .sublist ul{
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
     .listgames .listgamesmae .list .sublist ul li img{
         width: 80px;
         height: 80px;
         
     }
 
+    .listgames .listgamesmae .list .sublist ul li{
+        width: 140px;
+        margin: 0;
+        padding: 0;
+    }
+
     .listgames .listgamesmae .list .sublist ul li p{
-        font-size: 12px;
+        text-align: center;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        font-size: 11px;
     }
 
     .psplus{
@@ -929,6 +960,18 @@ footer .footer .linhafooter{
         text-align: center;
         padding: 0px 10px;
         order: 2;
+    }
+
+    footer .footer .image .psfooter img{
+        width: 50%;
+    }
+
+    footer .footer .content{
+        flex-direction: column;
+    }
+
+    footer .footer .content .sublist{
+        margin: 10px 0px;
     }
 }
 
